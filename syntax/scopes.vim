@@ -203,167 +203,166 @@ syn match scNumberType ':\zsf\(32\|64\)\>'
 syn match scNumberType ':\zs[ui]\(8\|16\|32\|64\|128\|s\|size\)\>'
 
 syn region scString start='"' end='"' skip='\\.' oneline
-syn region scString start='^""""'hs=e-4 end='^' skip="^ \{4}.*$"
-syn region scString start='^.\{1}""""'hs=e-3 end='^' skip="^ \{5}.*$"
-syn region scString start='^.\{2}""""'hs=e-3 end='^' skip="^ \{6}.*$"
-syn region scString start='^.\{3}""""'hs=e-3 end='^' skip="^ \{7}.*$"
-syn region scString start='^.\{4}""""'hs=e-3 end='^' skip="^ \{8}.*$"
-syn region scString start='^.\{5}""""'hs=e-3 end='^' skip="^ \{9}.*$"
-syn region scString start='^.\{6}""""'hs=e-3 end='^' skip="^ \{10}.*$"
-syn region scString start='^.\{7}""""'hs=e-3 end='^' skip="^ \{11}.*$"
-syn region scString start='^.\{8}""""'hs=e-3 end='^' skip="^ \{12}.*$"
-syn region scString start='^.\{9}""""'hs=e-3 end='^' skip="^ \{13}.*$"
-syn region scString start='^.\{10}""""'hs=e-3 end='^' skip="^ \{14}.*$"
-syn region scString start='^.\{11}""""'hs=e-3 end='^' skip="^ \{15}.*$"
-syn region scString start='^.\{12}""""'hs=e-3 end='^' skip="^ \{16}.*$"
-syn region scString start='^.\{13}""""'hs=e-3 end='^' skip="^ \{17}.*$"
-syn region scString start='^.\{14}""""'hs=e-3 end='^' skip="^ \{18}.*$"
-syn region scString start='^.\{15}""""'hs=e-3 end='^' skip="^ \{19}.*$"
-syn region scString start='^.\{16}""""'hs=e-3 end='^' skip="^ \{20}.*$"
-syn region scString start='^.\{17}""""'hs=e-3 end='^' skip="^ \{21}.*$"
-syn region scString start='^.\{18}""""'hs=e-3 end='^' skip="^ \{22}.*$"
-syn region scString start='^.\{19}""""'hs=e-3 end='^' skip="^ \{23}.*$"
-syn region scString start='^.\{20}""""'hs=e-3 end='^' skip="^ \{24}.*$"
-syn region scString start='^.\{21}""""'hs=e-3 end='^' skip="^ \{25}.*$"
-syn region scString start='^.\{22}""""'hs=e-3 end='^' skip="^ \{26}.*$"
-syn region scString start='^.\{23}""""'hs=e-3 end='^' skip="^ \{27}.*$"
-syn region scString start='^.\{24}""""'hs=e-3 end='^' skip="^ \{28}.*$"
-syn region scString start='^.\{25}""""'hs=e-3 end='^' skip="^ \{29}.*$"
-syn region scString start='^.\{26}""""'hs=e-3 end='^' skip="^ \{30}.*$"
-syn region scString start='^.\{27}""""'hs=e-3 end='^' skip="^ \{31}.*$"
-syn region scString start='^.\{28}""""'hs=e-3 end='^' skip="^ \{32}.*$"
-syn region scString start='^.\{29}""""'hs=e-3 end='^' skip="^ \{33}.*$"
-syn region scString start='^.\{30}""""'hs=e-3 end='^' skip="^ \{34}.*$"
-syn region scString start='^.\{31}""""'hs=e-3 end='^' skip="^ \{35}.*$"
-syn region scString start='^.\{32}""""'hs=e-3 end='^' skip="^ \{36}.*$"
-syn region scString start='^.\{33}""""'hs=e-3 end='^' skip="^ \{37}.*$"
-syn region scString start='^.\{34}""""'hs=e-3 end='^' skip="^ \{38}.*$"
-syn region scString start='^.\{35}""""'hs=e-3 end='^' skip="^ \{39}.*$"
-syn region scString start='^.\{36}""""'hs=e-3 end='^' skip="^ \{40}.*$"
-syn region scString start='^.\{37}""""'hs=e-3 end='^' skip="^ \{41}.*$"
-syn region scString start='^.\{38}""""'hs=e-3 end='^' skip="^ \{42}.*$"
-syn region scString start='^.\{39}""""'hs=e-3 end='^' skip="^ \{43}.*$"
-syn region scString start='^.\{40}""""'hs=e-3 end='^' skip="^ \{44}.*$"
-syn region scString start='^.\{41}""""'hs=e-3 end='^' skip="^ \{45}.*$"
-syn region scString start='^.\{42}""""'hs=e-3 end='^' skip="^ \{46}.*$"
-syn region scString start='^.\{43}""""'hs=e-3 end='^' skip="^ \{47}.*$"
-syn region scString start='^.\{44}""""'hs=e-3 end='^' skip="^ \{48}.*$"
-syn region scString start='^.\{45}""""'hs=e-3 end='^' skip="^ \{49}.*$"
-syn region scString start='^.\{46}""""'hs=e-3 end='^' skip="^ \{50}.*$"
-syn region scString start='^.\{47}""""'hs=e-3 end='^' skip="^ \{51}.*$"
-syn region scString start='^.\{48}""""'hs=e-3 end='^' skip="^ \{52}.*$"
-syn region scString start='^.\{49}""""'hs=e-3 end='^' skip="^ \{53}.*$"
-syn region scString start='^.\{50}""""'hs=e-3 end='^' skip="^ \{54}.*$"
-syn region scString start='^.\{51}""""'hs=e-3 end='^' skip="^ \{55}.*$"
-syn region scString start='^.\{52}""""'hs=e-3 end='^' skip="^ \{56}.*$"
-syn region scString start='^.\{53}""""'hs=e-3 end='^' skip="^ \{57}.*$"
-syn region scString start='^.\{54}""""'hs=e-3 end='^' skip="^ \{58}.*$"
-syn region scString start='^.\{55}""""'hs=e-3 end='^' skip="^ \{59}.*$"
-syn region scString start='^.\{56}""""'hs=e-3 end='^' skip="^ \{60}.*$"
-syn region scString start='^.\{57}""""'hs=e-3 end='^' skip="^ \{61}.*$"
-syn region scString start='^.\{58}""""'hs=e-3 end='^' skip="^ \{62}.*$"
-syn region scString start='^.\{59}""""'hs=e-3 end='^' skip="^ \{63}.*$"
-syn region scString start='^.\{60}""""'hs=e-3 end='^' skip="^ \{64}.*$"
-syn region scString start='^.\{61}""""'hs=e-3 end='^' skip="^ \{65}.*$"
-syn region scString start='^.\{62}""""'hs=e-3 end='^' skip="^ \{66}.*$"
-syn region scString start='^.\{63}""""'hs=e-3 end='^' skip="^ \{67}.*$"
-syn region scString start='^.\{64}""""'hs=e-3 end='^' skip="^ \{68}.*$"
-syn region scString start='^.\{65}""""'hs=e-3 end='^' skip="^ \{69}.*$"
-syn region scString start='^.\{66}""""'hs=e-3 end='^' skip="^ \{70}.*$"
-syn region scString start='^.\{67}""""'hs=e-3 end='^' skip="^ \{71}.*$"
-syn region scString start='^.\{68}""""'hs=e-3 end='^' skip="^ \{72}.*$"
-syn region scString start='^.\{69}""""'hs=e-3 end='^' skip="^ \{73}.*$"
-syn region scString start='^.\{70}""""'hs=e-3 end='^' skip="^ \{74}.*$"
-syn region scString start='^.\{71}""""'hs=e-3 end='^' skip="^ \{75}.*$"
-syn region scString start='^.\{72}""""'hs=e-3 end='^' skip="^ \{76}.*$"
-syn region scString start='^.\{73}""""'hs=e-3 end='^' skip="^ \{77}.*$"
-syn region scString start='^.\{74}""""'hs=e-3 end='^' skip="^ \{78}.*$"
-syn region scString start='^.\{75}""""'hs=e-3 end='^' skip="^ \{79}.*$"
-syn region scString start='^.\{76}""""'hs=e-3 end='^' skip="^ \{80}.*$"
-syn region scString start='^.\{77}""""'hs=e-3 end='^' skip="^ \{81}.*$"
-syn region scString start='^.\{78}""""'hs=e-3 end='^' skip="^ \{82}.*$"
-syn region scString start='^.\{79}""""'hs=e-3 end='^' skip="^ \{83}.*$"
+syn region scString start='^""""'hs=e-4 end='^' skip="^\( \{4}.*\| *\)$"
+syn region scString start='^.\{1}""""'hs=e-3 end='^' skip="^\( \{5}.*\| *\)$"
+syn region scString start='^.\{2}""""'hs=e-3 end='^' skip="^\( \{6}.*\| *\)$"
+syn region scString start='^.\{3}""""'hs=e-3 end='^' skip="^\( \{7}.*\| *\)$"
+syn region scString start='^.\{4}""""'hs=e-3 end='^' skip="^\( \{8}.*\| *\)$"
+syn region scString start='^.\{5}""""'hs=e-3 end='^' skip="^\( \{9}.*\| *\)$"
+syn region scString start='^.\{6}""""'hs=e-3 end='^' skip="^\( \{10}.*\| *\)$"
+syn region scString start='^.\{7}""""'hs=e-3 end='^' skip="^\( \{11}.*\| *\)$"
+syn region scString start='^.\{8}""""'hs=e-3 end='^' skip="^\( \{12}.*\| *\)$"
+syn region scString start='^.\{9}""""'hs=e-3 end='^' skip="^\( \{13}.*\| *\)$"
+syn region scString start='^.\{10}""""'hs=e-3 end='^' skip="^\( \{14}.*\| *\)$"
+syn region scString start='^.\{11}""""'hs=e-3 end='^' skip="^\( \{15}.*\| *\)$"
+syn region scString start='^.\{12}""""'hs=e-3 end='^' skip="^\( \{16}.*\| *\)$"
+syn region scString start='^.\{13}""""'hs=e-3 end='^' skip="^\( \{17}.*\| *\)$"
+syn region scString start='^.\{14}""""'hs=e-3 end='^' skip="^\( \{18}.*\| *\)$"
+syn region scString start='^.\{15}""""'hs=e-3 end='^' skip="^\( \{19}.*\| *\)$"
+syn region scString start='^.\{16}""""'hs=e-3 end='^' skip="^\( \{20}.*\| *\)$"
+syn region scString start='^.\{17}""""'hs=e-3 end='^' skip="^\( \{21}.*\| *\)$"
+syn region scString start='^.\{18}""""'hs=e-3 end='^' skip="^\( \{22}.*\| *\)$"
+syn region scString start='^.\{19}""""'hs=e-3 end='^' skip="^\( \{23}.*\| *\)$"
+syn region scString start='^.\{20}""""'hs=e-3 end='^' skip="^\( \{24}.*\| *\)$"
+syn region scString start='^.\{21}""""'hs=e-3 end='^' skip="^\( \{25}.*\| *\)$"
+syn region scString start='^.\{22}""""'hs=e-3 end='^' skip="^\( \{26}.*\| *\)$"
+syn region scString start='^.\{23}""""'hs=e-3 end='^' skip="^\( \{27}.*\| *\)$"
+syn region scString start='^.\{24}""""'hs=e-3 end='^' skip="^\( \{28}.*\| *\)$"
+syn region scString start='^.\{25}""""'hs=e-3 end='^' skip="^\( \{29}.*\| *\)$"
+syn region scString start='^.\{26}""""'hs=e-3 end='^' skip="^\( \{30}.*\| *\)$"
+syn region scString start='^.\{27}""""'hs=e-3 end='^' skip="^\( \{31}.*\| *\)$"
+syn region scString start='^.\{28}""""'hs=e-3 end='^' skip="^\( \{32}.*\| *\)$"
+syn region scString start='^.\{29}""""'hs=e-3 end='^' skip="^\( \{33}.*\| *\)$"
+syn region scString start='^.\{30}""""'hs=e-3 end='^' skip="^\( \{34}.*\| *\)$"
+syn region scString start='^.\{31}""""'hs=e-3 end='^' skip="^\( \{35}.*\| *\)$"
+syn region scString start='^.\{32}""""'hs=e-3 end='^' skip="^\( \{36}.*\| *\)$"
+syn region scString start='^.\{33}""""'hs=e-3 end='^' skip="^\( \{37}.*\| *\)$"
+syn region scString start='^.\{34}""""'hs=e-3 end='^' skip="^\( \{38}.*\| *\)$"
+syn region scString start='^.\{35}""""'hs=e-3 end='^' skip="^\( \{39}.*\| *\)$"
+syn region scString start='^.\{36}""""'hs=e-3 end='^' skip="^\( \{40}.*\| *\)$"
+syn region scString start='^.\{37}""""'hs=e-3 end='^' skip="^\( \{41}.*\| *\)$"
+syn region scString start='^.\{38}""""'hs=e-3 end='^' skip="^\( \{42}.*\| *\)$"
+syn region scString start='^.\{39}""""'hs=e-3 end='^' skip="^\( \{43}.*\| *\)$"
+syn region scString start='^.\{40}""""'hs=e-3 end='^' skip="^\( \{44}.*\| *\)$"
+syn region scString start='^.\{41}""""'hs=e-3 end='^' skip="^\( \{45}.*\| *\)$"
+syn region scString start='^.\{42}""""'hs=e-3 end='^' skip="^\( \{46}.*\| *\)$"
+syn region scString start='^.\{43}""""'hs=e-3 end='^' skip="^\( \{47}.*\| *\)$"
+syn region scString start='^.\{44}""""'hs=e-3 end='^' skip="^\( \{48}.*\| *\)$"
+syn region scString start='^.\{45}""""'hs=e-3 end='^' skip="^\( \{49}.*\| *\)$"
+syn region scString start='^.\{46}""""'hs=e-3 end='^' skip="^\( \{50}.*\| *\)$"
+syn region scString start='^.\{47}""""'hs=e-3 end='^' skip="^\( \{51}.*\| *\)$"
+syn region scString start='^.\{48}""""'hs=e-3 end='^' skip="^\( \{52}.*\| *\)$"
+syn region scString start='^.\{49}""""'hs=e-3 end='^' skip="^\( \{53}.*\| *\)$"
+syn region scString start='^.\{50}""""'hs=e-3 end='^' skip="^\( \{54}.*\| *\)$"
+syn region scString start='^.\{51}""""'hs=e-3 end='^' skip="^\( \{55}.*\| *\)$"
+syn region scString start='^.\{52}""""'hs=e-3 end='^' skip="^\( \{56}.*\| *\)$"
+syn region scString start='^.\{53}""""'hs=e-3 end='^' skip="^\( \{57}.*\| *\)$"
+syn region scString start='^.\{54}""""'hs=e-3 end='^' skip="^\( \{58}.*\| *\)$"
+syn region scString start='^.\{55}""""'hs=e-3 end='^' skip="^\( \{59}.*\| *\)$"
+syn region scString start='^.\{56}""""'hs=e-3 end='^' skip="^\( \{60}.*\| *\)$"
+syn region scString start='^.\{57}""""'hs=e-3 end='^' skip="^\( \{61}.*\| *\)$"
+syn region scString start='^.\{58}""""'hs=e-3 end='^' skip="^\( \{62}.*\| *\)$"
+syn region scString start='^.\{59}""""'hs=e-3 end='^' skip="^\( \{63}.*\| *\)$"
+syn region scString start='^.\{60}""""'hs=e-3 end='^' skip="^\( \{64}.*\| *\)$"
+syn region scString start='^.\{61}""""'hs=e-3 end='^' skip="^\( \{65}.*\| *\)$"
+syn region scString start='^.\{62}""""'hs=e-3 end='^' skip="^\( \{66}.*\| *\)$"
+syn region scString start='^.\{63}""""'hs=e-3 end='^' skip="^\( \{67}.*\| *\)$"
+syn region scString start='^.\{64}""""'hs=e-3 end='^' skip="^\( \{68}.*\| *\)$"
+syn region scString start='^.\{65}""""'hs=e-3 end='^' skip="^\( \{69}.*\| *\)$"
+syn region scString start='^.\{66}""""'hs=e-3 end='^' skip="^\( \{70}.*\| *\)$"
+syn region scString start='^.\{67}""""'hs=e-3 end='^' skip="^\( \{71}.*\| *\)$"
+syn region scString start='^.\{68}""""'hs=e-3 end='^' skip="^\( \{72}.*\| *\)$"
+syn region scString start='^.\{69}""""'hs=e-3 end='^' skip="^\( \{73}.*\| *\)$"
+syn region scString start='^.\{70}""""'hs=e-3 end='^' skip="^\( \{74}.*\| *\)$"
+syn region scString start='^.\{71}""""'hs=e-3 end='^' skip="^\( \{75}.*\| *\)$"
+syn region scString start='^.\{72}""""'hs=e-3 end='^' skip="^\( \{76}.*\| *\)$"
+syn region scString start='^.\{73}""""'hs=e-3 end='^' skip="^\( \{77}.*\| *\)$"
+syn region scString start='^.\{74}""""'hs=e-3 end='^' skip="^\( \{78}.*\| *\)$"
+syn region scString start='^.\{75}""""'hs=e-3 end='^' skip="^\( \{79}.*\| *\)$"
+syn region scString start='^.\{76}""""'hs=e-3 end='^' skip="^\( \{80}.*\| *\)$"
+syn region scString start='^.\{77}""""'hs=e-3 end='^' skip="^\( \{81}.*\| *\)$"
+syn region scString start='^.\{78}""""'hs=e-3 end='^' skip="^\( \{82}.*\| *\)$"
+syn region scString start='^.\{79}""""'hs=e-3 end='^' skip="^\( \{83}.*\| *\)$"
 
-syn match scComment '#.*$' contains=scTodo
-syn region scComment start='^#' end='^' skip="^ \{4}.*$" contains=scTodo
-syn region scComment start='^.\{1}#'hs=e end='^' skip="^ \{2}.*$" contains=scTodo
-syn region scComment start='^.\{2}#'hs=e end='^' skip="^ \{3}.*$" contains=scTodo
-syn region scComment start='^.\{3}#'hs=e end='^' skip="^ \{4}.*$" contains=scTodo
-syn region scComment start='^.\{4}#'hs=e end='^' skip="^ \{5}.*$" contains=scTodo
-syn region scComment start='^.\{5}#'hs=e end='^' skip="^ \{6}.*$" contains=scTodo
-syn region scComment start='^.\{6}#'hs=e end='^' skip="^ \{7}.*$" contains=scTodo
-syn region scComment start='^.\{7}#'hs=e end='^' skip="^ \{8}.*$" contains=scTodo
-syn region scComment start='^.\{8}#'hs=e end='^' skip="^ \{9}.*$" contains=scTodo
-syn region scComment start='^.\{9}#'hs=e end='^' skip="^ \{10}.*$" contains=scTodo
-syn region scComment start='^.\{10}#'hs=e end='^' skip="^ \{11}.*$" contains=scTodo
-syn region scComment start='^.\{11}#'hs=e end='^' skip="^ \{12}.*$" contains=scTodo
-syn region scComment start='^.\{12}#'hs=e end='^' skip="^ \{13}.*$" contains=scTodo
-syn region scComment start='^.\{13}#'hs=e end='^' skip="^ \{14}.*$" contains=scTodo
-syn region scComment start='^.\{14}#'hs=e end='^' skip="^ \{15}.*$" contains=scTodo
-syn region scComment start='^.\{15}#'hs=e end='^' skip="^ \{16}.*$" contains=scTodo
-syn region scComment start='^.\{16}#'hs=e end='^' skip="^ \{17}.*$" contains=scTodo
-syn region scComment start='^.\{17}#'hs=e end='^' skip="^ \{18}.*$" contains=scTodo
-syn region scComment start='^.\{18}#'hs=e end='^' skip="^ \{19}.*$" contains=scTodo
-syn region scComment start='^.\{19}#'hs=e end='^' skip="^ \{20}.*$" contains=scTodo
-syn region scComment start='^.\{20}#'hs=e end='^' skip="^ \{21}.*$" contains=scTodo
-syn region scComment start='^.\{21}#'hs=e end='^' skip="^ \{22}.*$" contains=scTodo
-syn region scComment start='^.\{22}#'hs=e end='^' skip="^ \{23}.*$" contains=scTodo
-syn region scComment start='^.\{23}#'hs=e end='^' skip="^ \{24}.*$" contains=scTodo
-syn region scComment start='^.\{24}#'hs=e end='^' skip="^ \{25}.*$" contains=scTodo
-syn region scComment start='^.\{25}#'hs=e end='^' skip="^ \{26}.*$" contains=scTodo
-syn region scComment start='^.\{26}#'hs=e end='^' skip="^ \{27}.*$" contains=scTodo
-syn region scComment start='^.\{27}#'hs=e end='^' skip="^ \{28}.*$" contains=scTodo
-syn region scComment start='^.\{28}#'hs=e end='^' skip="^ \{29}.*$" contains=scTodo
-syn region scComment start='^.\{29}#'hs=e end='^' skip="^ \{30}.*$" contains=scTodo
-syn region scComment start='^.\{30}#'hs=e end='^' skip="^ \{31}.*$" contains=scTodo
-syn region scComment start='^.\{31}#'hs=e end='^' skip="^ \{32}.*$" contains=scTodo
-syn region scComment start='^.\{32}#'hs=e end='^' skip="^ \{33}.*$" contains=scTodo
-syn region scComment start='^.\{33}#'hs=e end='^' skip="^ \{34}.*$" contains=scTodo
-syn region scComment start='^.\{34}#'hs=e end='^' skip="^ \{35}.*$" contains=scTodo
-syn region scComment start='^.\{35}#'hs=e end='^' skip="^ \{36}.*$" contains=scTodo
-syn region scComment start='^.\{36}#'hs=e end='^' skip="^ \{37}.*$" contains=scTodo
-syn region scComment start='^.\{37}#'hs=e end='^' skip="^ \{38}.*$" contains=scTodo
-syn region scComment start='^.\{38}#'hs=e end='^' skip="^ \{39}.*$" contains=scTodo
-syn region scComment start='^.\{39}#'hs=e end='^' skip="^ \{40}.*$" contains=scTodo
-syn region scComment start='^.\{40}#'hs=e end='^' skip="^ \{41}.*$" contains=scTodo
-syn region scComment start='^.\{41}#'hs=e end='^' skip="^ \{42}.*$" contains=scTodo
-syn region scComment start='^.\{42}#'hs=e end='^' skip="^ \{43}.*$" contains=scTodo
-syn region scComment start='^.\{43}#'hs=e end='^' skip="^ \{44}.*$" contains=scTodo
-syn region scComment start='^.\{44}#'hs=e end='^' skip="^ \{45}.*$" contains=scTodo
-syn region scComment start='^.\{45}#'hs=e end='^' skip="^ \{46}.*$" contains=scTodo
-syn region scComment start='^.\{46}#'hs=e end='^' skip="^ \{47}.*$" contains=scTodo
-syn region scComment start='^.\{47}#'hs=e end='^' skip="^ \{48}.*$" contains=scTodo
-syn region scComment start='^.\{48}#'hs=e end='^' skip="^ \{49}.*$" contains=scTodo
-syn region scComment start='^.\{49}#'hs=e end='^' skip="^ \{50}.*$" contains=scTodo
-syn region scComment start='^.\{50}#'hs=e end='^' skip="^ \{51}.*$" contains=scTodo
-syn region scComment start='^.\{51}#'hs=e end='^' skip="^ \{52}.*$" contains=scTodo
-syn region scComment start='^.\{52}#'hs=e end='^' skip="^ \{53}.*$" contains=scTodo
-syn region scComment start='^.\{53}#'hs=e end='^' skip="^ \{54}.*$" contains=scTodo
-syn region scComment start='^.\{54}#'hs=e end='^' skip="^ \{55}.*$" contains=scTodo
-syn region scComment start='^.\{55}#'hs=e end='^' skip="^ \{56}.*$" contains=scTodo
-syn region scComment start='^.\{56}#'hs=e end='^' skip="^ \{57}.*$" contains=scTodo
-syn region scComment start='^.\{57}#'hs=e end='^' skip="^ \{58}.*$" contains=scTodo
-syn region scComment start='^.\{58}#'hs=e end='^' skip="^ \{59}.*$" contains=scTodo
-syn region scComment start='^.\{59}#'hs=e end='^' skip="^ \{60}.*$" contains=scTodo
-syn region scComment start='^.\{60}#'hs=e end='^' skip="^ \{61}.*$" contains=scTodo
-syn region scComment start='^.\{61}#'hs=e end='^' skip="^ \{62}.*$" contains=scTodo
-syn region scComment start='^.\{62}#'hs=e end='^' skip="^ \{63}.*$" contains=scTodo
-syn region scComment start='^.\{63}#'hs=e end='^' skip="^ \{64}.*$" contains=scTodo
-syn region scComment start='^.\{64}#'hs=e end='^' skip="^ \{65}.*$" contains=scTodo
-syn region scComment start='^.\{65}#'hs=e end='^' skip="^ \{66}.*$" contains=scTodo
-syn region scComment start='^.\{66}#'hs=e end='^' skip="^ \{67}.*$" contains=scTodo
-syn region scComment start='^.\{67}#'hs=e end='^' skip="^ \{68}.*$" contains=scTodo
-syn region scComment start='^.\{68}#'hs=e end='^' skip="^ \{69}.*$" contains=scTodo
-syn region scComment start='^.\{69}#'hs=e end='^' skip="^ \{70}.*$" contains=scTodo
-syn region scComment start='^.\{70}#'hs=e end='^' skip="^ \{71}.*$" contains=scTodo
-syn region scComment start='^.\{71}#'hs=e end='^' skip="^ \{72}.*$" contains=scTodo
-syn region scComment start='^.\{72}#'hs=e end='^' skip="^ \{73}.*$" contains=scTodo
-syn region scComment start='^.\{73}#'hs=e end='^' skip="^ \{74}.*$" contains=scTodo
-syn region scComment start='^.\{74}#'hs=e end='^' skip="^ \{75}.*$" contains=scTodo
-syn region scComment start='^.\{75}#'hs=e end='^' skip="^ \{76}.*$" contains=scTodo
-syn region scComment start='^.\{76}#'hs=e end='^' skip="^ \{77}.*$" contains=scTodo
-syn region scComment start='^.\{77}#'hs=e end='^' skip="^ \{78}.*$" contains=scTodo
-syn region scComment start='^.\{78}#'hs=e end='^' skip="^ \{79}.*$" contains=scTodo
-syn region scComment start='^.\{79}#'hs=e end='^' skip="^ \{80}.*$" contains=scTodo
+syn region scComment start='#' end='^' skip="^\( \{1}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{1}#'hs=e end='^' skip="^\( \{2}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{2}#'hs=e end='^' skip="^\( \{3}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{3}#'hs=e end='^' skip="^\( \{4}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{4}#'hs=e end='^' skip="^\( \{5}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{5}#'hs=e end='^' skip="^\( \{6}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{6}#'hs=e end='^' skip="^\( \{7}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{7}#'hs=e end='^' skip="^\( \{8}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{8}#'hs=e end='^' skip="^\( \{9}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{9}#'hs=e end='^' skip="^\( \{10}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{10}#'hs=e end='^' skip="^\( \{11}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{11}#'hs=e end='^' skip="^\( \{12}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{12}#'hs=e end='^' skip="^\( \{13}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{13}#'hs=e end='^' skip="^\( \{14}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{14}#'hs=e end='^' skip="^\( \{15}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{15}#'hs=e end='^' skip="^\( \{16}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{16}#'hs=e end='^' skip="^\( \{17}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{17}#'hs=e end='^' skip="^\( \{18}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{18}#'hs=e end='^' skip="^\( \{19}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{19}#'hs=e end='^' skip="^\( \{20}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{20}#'hs=e end='^' skip="^\( \{21}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{21}#'hs=e end='^' skip="^\( \{22}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{22}#'hs=e end='^' skip="^\( \{23}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{23}#'hs=e end='^' skip="^\( \{24}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{24}#'hs=e end='^' skip="^\( \{25}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{25}#'hs=e end='^' skip="^\( \{26}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{26}#'hs=e end='^' skip="^\( \{27}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{27}#'hs=e end='^' skip="^\( \{28}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{28}#'hs=e end='^' skip="^\( \{29}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{29}#'hs=e end='^' skip="^\( \{30}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{30}#'hs=e end='^' skip="^\( \{31}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{31}#'hs=e end='^' skip="^\( \{32}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{32}#'hs=e end='^' skip="^\( \{33}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{33}#'hs=e end='^' skip="^\( \{34}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{34}#'hs=e end='^' skip="^\( \{35}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{35}#'hs=e end='^' skip="^\( \{36}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{36}#'hs=e end='^' skip="^\( \{37}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{37}#'hs=e end='^' skip="^\( \{38}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{38}#'hs=e end='^' skip="^\( \{39}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{39}#'hs=e end='^' skip="^\( \{40}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{40}#'hs=e end='^' skip="^\( \{41}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{41}#'hs=e end='^' skip="^\( \{42}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{42}#'hs=e end='^' skip="^\( \{43}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{43}#'hs=e end='^' skip="^\( \{44}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{44}#'hs=e end='^' skip="^\( \{45}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{45}#'hs=e end='^' skip="^\( \{46}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{46}#'hs=e end='^' skip="^\( \{47}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{47}#'hs=e end='^' skip="^\( \{48}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{48}#'hs=e end='^' skip="^\( \{49}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{49}#'hs=e end='^' skip="^\( \{50}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{50}#'hs=e end='^' skip="^\( \{51}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{51}#'hs=e end='^' skip="^\( \{52}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{52}#'hs=e end='^' skip="^\( \{53}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{53}#'hs=e end='^' skip="^\( \{54}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{54}#'hs=e end='^' skip="^\( \{55}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{55}#'hs=e end='^' skip="^\( \{56}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{56}#'hs=e end='^' skip="^\( \{57}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{57}#'hs=e end='^' skip="^\( \{58}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{58}#'hs=e end='^' skip="^\( \{59}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{59}#'hs=e end='^' skip="^\( \{60}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{60}#'hs=e end='^' skip="^\( \{61}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{61}#'hs=e end='^' skip="^\( \{62}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{62}#'hs=e end='^' skip="^\( \{63}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{63}#'hs=e end='^' skip="^\( \{64}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{64}#'hs=e end='^' skip="^\( \{65}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{65}#'hs=e end='^' skip="^\( \{66}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{66}#'hs=e end='^' skip="^\( \{67}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{67}#'hs=e end='^' skip="^\( \{68}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{68}#'hs=e end='^' skip="^\( \{69}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{69}#'hs=e end='^' skip="^\( \{70}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{70}#'hs=e end='^' skip="^\( \{71}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{71}#'hs=e end='^' skip="^\( \{72}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{72}#'hs=e end='^' skip="^\( \{73}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{73}#'hs=e end='^' skip="^\( \{74}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{74}#'hs=e end='^' skip="^\( \{75}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{75}#'hs=e end='^' skip="^\( \{76}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{76}#'hs=e end='^' skip="^\( \{77}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{77}#'hs=e end='^' skip="^\( \{78}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{78}#'hs=e end='^' skip="^\( \{79}.*\| *\)$" contains=scTodo
+syn region scComment start='^.\{79}#'hs=e end='^' skip="^\( \{80}.*\| *\)$" contains=scTodo
 
 syn keyword scTodo TODO FIXME
