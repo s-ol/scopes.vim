@@ -5,6 +5,8 @@ endif
 let b:current_syntax = 'sc'
 
 " Declarations
+syn iskeyword @,33-39,42-64,'|',~,_,
+
 hi def link     scKeywordBuiltin      PreProc
 hi def link     scKeywordLibrary      PreProc
 hi def link     scKeywordTesting      PreProc
@@ -35,14 +37,11 @@ hi def link     scTypeGLM             Type
 hi def link     scBoolean             Number
 hi def link     scNothing             Number
 hi def link     scNumber              Number
+hi def link     scNumberType          Type
 hi def link     scString              String
 
 hi def link     scComment             Comment
 hi def link     scTodo                Todo
-
-syn keyword scTodo TODO FIXME
-
-syn iskeyword @,33-39,42-64,'|',~,_,
 
 " Keywords
 syn keyword scKeywordBuiltin _ then switch case pass default run-stage loop repeat break raise
@@ -71,10 +70,12 @@ syn keyword scConstantLibrary this-type super-type package main-module? module-d
 syn keyword scConstantGLSL gl_Position gl_FragCoord gl_VertexID gl_FragDepth
 syn match   scConstantMath '\<\(pi\|e\)\ze\(\>\|:\)\?'
 
+
 " Operators
 syn keyword scOperator as <: and or not //= // @ == != <= >= = ! < > ** -> <- as:= := <<= << >>= >> ..= ..
 syn match scOperator '\<[\.?+\-*/%&|^~]\>'
 syn match scOperator '\<[\.?+\-*/%&|^]=\>'
+
 
 " Functions
 syn keyword scFunctionBuiltin returning raising move view lose dropped?  dupe viewing __drop assign ptrtoref
@@ -122,6 +123,7 @@ syn keyword scFunctionGLSL uimage2DMSArray uimage2DMS image1D image2D image3D im
 syn keyword scFunctionGLSL image2DArray imageCubeArray imageBuffer image2DMSArray image2DMS
 
 syn keyword scFunctionGLM dot transpose
+
 
 " SFX Functions
 syn keyword scFunctionSFXApi sc_refer_flags sc_refer_storage_class sc_anchor_offset sc_strip_qualifiers sc_parameter_new
@@ -173,6 +175,7 @@ syn keyword scOperatorSpecial __r<< __r>> __r+ __r- __r* __r/ __r% __r& __r| __r
 syn keyword scOperatorSpecial __imply __as __== __!= __..  __<= __< __>= __> __// __<< __>>
 syn keyword scOperatorSpecial __<< __>> __+ __- __* __/ __% __& __| __~ __^ __=
 
+
 " Types
 syn keyword scTypeBuiltin CompileStage Error Arguments CEnum CUnion CStruct noreturn voidstar
 syn keyword scTypeBuiltin void bool usize ssize intptr u8 u16 u32 u64 i8 i16 i32 i64 f32 f64
@@ -191,13 +194,13 @@ syn match scTypeGLM '\<[iudb]\?mat[234]\(x[234]\)\?\>'
 syn keyword scTypeGLSL gsampler
 syn match   scTypeGLSL '\<[iug]\?sampler\(1D\|2D\|3D\|Cube\|2DRect\|1DArray\|2DArray\|CubeArray\|Buffer\|2DMS\|2DMSArray\)\>'
 
-syn match scType ':\zsf\(32\|64\)\>'
-syn match scType ':\zs[ui]\(8\|16\|32\|64\|128\|s\|size\)\>'
 
 " Literals
 syn keyword scBoolean true false
 syn keyword scNothing none unnamed null
 syn match scNumber '\<[+-]\?[0-9][0-9_]*\(\.[0-9][0-9_]*\)\?\([eE][+-]\?[0-9_]\+\)\?\ze\(\>\|:\)'
+syn match scNumberType ':\zsf\(32\|64\)\>'
+syn match scNumberType ':\zs[ui]\(8\|16\|32\|64\|128\|s\|size\)\>'
 
 syn region scString start='"' end='"' skip='\\.' oneline
 syn region scString start='^""""'hs=e-4 end='^' skip="^ \{4}.*$"
@@ -362,3 +365,5 @@ syn region scComment start='^.\{76}#'hs=e end='^' skip="^ \{77}.*$" contains=scT
 syn region scComment start='^.\{77}#'hs=e end='^' skip="^ \{78}.*$" contains=scTodo
 syn region scComment start='^.\{78}#'hs=e end='^' skip="^ \{79}.*$" contains=scTodo
 syn region scComment start='^.\{79}#'hs=e end='^' skip="^ \{80}.*$" contains=scTodo
+
+syn keyword scTodo TODO FIXME
