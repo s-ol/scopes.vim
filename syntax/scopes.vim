@@ -5,7 +5,7 @@ endif
 let b:current_syntax = 'sc'
 
 " Declarations
-syn iskeyword @,33-39,42-64,'|',~,_,
+syn iskeyword @,33-39,42-64,|,~,_
 
 hi def link     scKeywordBuiltin      PreProc
 hi def link     scKeywordLibrary      PreProc
